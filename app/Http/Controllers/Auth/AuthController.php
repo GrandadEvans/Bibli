@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Bibli\Http\Controllers\Auth;
 
-use App\User;
+use Bibli\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use Bibli\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
@@ -56,7 +56,7 @@ class AuthController extends Controller
     }
 
     /**
-     * Create a new user instance after a valid registration.
+     * Create a new User instance after a valid registration.
      *
      * @param  array  $data
      * @return User

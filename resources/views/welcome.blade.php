@@ -1,45 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
     <head>
-        <title>Laravel</title>
+        <title>BIBLI</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
+        <link href="/css/plugins.css" rel="stylesheet" />
+        <link href="/css/app.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
+        <div class="app" id="app">
+            @include('partials.PageNavbar')
+
+            <main class="container">
+                <!--[if lt IE 8]>
+                <info-box
+                        v-if=" ! alertHasBeenDismissed('oldBrowserWarning')"
+                        v-on:click="dismissAlert('oldBrowserWarning')"
+                        type="warning"
+                ><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></info-box>
+                <![endif]-->
+
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#editor" role="tab"><i class="fa fa-edit"></i> Editor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#bib" role="tab">Bib.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#references" role="tab"><i class="fa fa-book"></i> References</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane" id="editor" role="tabpanel">
+                        @include('partials.editor')
+                    </div>
+                    <div class="tab-pane" id="bib" role="tabpanel">
+                        @include('partials.bibliography')
+                    </div>
+                    <div class="tab-pane active" id="references" role="tabpanel">
+                        @include('partials.references')
+                    </div>
+                </div>
+            </main>
+
+            @include('partials.pageFooter')
+         </div>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>

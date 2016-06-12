@@ -1,0 +1,24 @@
+.defaultFormatting {
+    text-align: left;
+    text-align-last: left;
+    font-weight: normal;
+    text-decoration: none;
+    hyphens: auto;
+    letter-spacing: normal;
+    line-height: 1.4;
+}
+
+
+.center  { text-align: center;  }
+.left    { text-align: left;    }
+.right   { text-align: right;   }
+.justify { text-align: justify; }
+
+.body { font-weight: bold; }
+.underline { text-decoration: underline; }
+.italic { font-style: italic; }
+.strikethrough { text-decoration: line-through; }
+
+.superscript { vertical-align: super; font-size: 40%; }
+.subscript { vertical-align: sub; font-size: 40%; }
+

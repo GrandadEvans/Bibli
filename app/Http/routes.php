@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/title',  [
+    'as' => 'title', 'uses' => 'ExternalSitesController@getTitle'
+]);
+
 Route::get('/', function () {
     return view('welcome');
 });

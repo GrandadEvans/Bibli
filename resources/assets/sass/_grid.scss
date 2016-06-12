@@ -1,0 +1,56 @@
+.app {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    & > main {
+        flex: 1;
+        justify-content: flex-start;
+        padding-top: 1rem;
+        //display: flex;
+        //flex-direction: column;
+        width: 70%;
+    }
+
+    & > footer {
+        border-top: 1px solid #ccc;
+        text-align: center;
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    & > header,
+        footer {
+        //display: flex;
+        //flex-direction: column;
+        //justify-content: center;
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+.tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+
+    .tab-pane {
+        padding: 1rem;
+    }
+}
+
+.fa-icon {
+    height: 20px;
+    vertical-align: bottom;
+    width: 20px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+

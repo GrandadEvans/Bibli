@@ -1,0 +1,208 @@
+@import "../bower_components/bootstrap/scss/bootstrap-flex.scss";
+@import "colours";
+@import "fonts";
+
+body {
+    display:        flex;
+    flex-direction: column;
+}
+
+.page-header {
+    nav {
+        justify-content: center;
+        align-items:     stretch;
+        display:         flex;
+        flex: {
+            direction: row;
+            wrap:      nowrap;
+        }
+    }
+
+    a {
+        flex-grow: 1;
+        text: {
+            align:      center;
+            decoration: underline;
+        }
+        color:     white;
+        padding:   1rem 0.25rem;
+    }
+
+    background-color: $dark;
+    color:            invert($dark);
+}
+
+.toolbar-container {
+    display: flex;
+    flex: {
+        direction: row;
+        wrap:      wrap;
+    }
+}
+
+.toolbar-module {
+    display:         flex;
+    flex: {
+        direction: row;
+        wrap:      nowrap;
+    }
+    justify-content: flex-start;
+    padding-left:    0;
+    margin-bottom:   0;
+    border: {
+        top:    1px solid #ccc;
+        bottom: 1px solid #ccc;
+        right:  1px solid #ccc;
+        left:   none;
+    }
+
+    &:first-of-type(ul) {
+        border-left:  1px solid #ccc;
+        padding-left: 0.5rem;
+    }
+
+    select {
+        height: 1.8rem;
+        color:  $dark;
+    }
+
+    li {
+        list-style: none;
+        padding:    0.25rem;
+        margin:     0.25rem;
+        cursor:     pointer;
+
+        &:hover {
+            background-color: $dark;
+            color:            invert($dark);
+        }
+    }
+
+    .handle {
+        background-color: white;
+        cursor: grab;
+        color:  gray;
+
+        &:hover {
+            background-color: white;
+            color:            $dark;
+        }
+        &:active {
+            cursor: grabbing;
+        }
+    }
+}
+
+textarea {
+    order:     2;
+    flex-grow: 2;
+    width:     95%;
+    margin:    0 auto;
+    border:     1px solid $dark {
+        radius: 2px;
+    }
+}
+
+.separator {
+    margin: 0.15rem 0.5rem 0;
+    color:  $medium;
+}
+
+.editor-container {
+    display:        flex;
+    flex-direction: row;
+    margin:         1.5rem;
+}
+
+.gutter {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    li {
+        padding-left: 1rem;
+        list-style: outside none none;
+        line-height: 1.8;
+    }
+}
+.gutter-icons {
+    width: 10%;
+}
+
+.gutter-review {
+    width: 15%;
+}
+
+.essay-area {
+    box-shadow:     2px 2px 2px #333;
+    display:        flex;
+    flex-direction: column;
+    border:         1px solid #333;
+    margin:         0 1.5rem;
+    padding:        1rem;
+    width:          75%;
+
+    .h1 {
+        text-align: center;
+    }
+
+    .h2 {
+        padding-top: 1.5rem;
+    }
+
+    .ww {
+        color:       darkviolet;
+        text-shadow: 1px 1px 1px #ccc;
+        font-weight: bold;
+    }
+
+    .active {
+        border: 1px dotted #ccc;
+    }
+
+    .icons {
+        margin-left: -9rem;
+        font-size:   0.9rem;
+        position:    absolute;
+    }
+}
+
+.level-indicator {
+    font-size: 2.6rem;
+    position: absolute;
+    margin-top: -1.4rem;
+    margin-left: -2.5rem;
+}
+
+.word-count-gutter {
+    width: 15rem;
+
+    & > div {
+        position: fixed;    
+    }
+}
+
+.word-count-table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    border: 1px solid $medium;
+
+    thead, tfoot {
+        font-weight: bold;
+    }
+    td, th {
+        margin: 0.5rem;
+        border: 1px solid $medium;
+        border-collapse: separate;
+        padding: 0.25rem 0.5rem;
+    }
+
+    td:last-child {
+        text-align: right;
+    }
+}
+
+.starter {
+    cursor: pointer;
+
+}

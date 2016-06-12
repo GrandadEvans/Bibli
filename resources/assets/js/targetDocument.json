@@ -1,0 +1,44 @@
+{
+    "name":       "TMA 01",
+    "title":      "Example document layout",
+    "author":     {
+        "name":  "John Evans",
+        "ID":    "B123456",
+        "email": "john@grandadevans.com"
+    },
+    "paragraphs": [
+        {
+            "heading": "h1",
+            "name":    "Title",
+            "countWords": false,
+            "content": "This is a test message",
+            "formattingClasses": [
+                "center"
+            ],
+            "wordCount": null,
+            "unixTime": 123456789
+        },
+        {
+            "heading": "h2",
+            "name":    "Sub-title",
+            "countWords": true,
+            "content": "This is a sub title",
+            "formattingClasses": [
+                "left"
+            ],
+            "wordCount": 4,
+            "unixTime": 123456790
+        },
+       {
+            "heading": "p",
+            "name":    "Introduction",
+            "countWords": true,
+            "content": "When the cave men turned 30, as this was a ",
+            "formattingClasses": [
+                "left"
+            ],
+            "wordCount": 4,
+            "unixTime": 123456790
+        }
+    ]
+}
