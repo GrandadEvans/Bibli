@@ -1,0 +1,34 @@
+{
+  "name": "Bibli",
+  "description": "A utility to produce working bibliographies",
+  "main": "public/js/main.js",
+  "authors": [
+    "John Evans <john@grandadevans.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bibliography",
+    "bib",
+    "openUniversity",
+    "Open University",
+    "University"
+  ],
+  "homepage": "https://github.com/GrandadEvans/Bibli",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "idea",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.2",
+    "bootstrap-sweetalert": "1.0.0",
+    "typeahead.js": "0.11.1",
+    "vue-awesome": "*",
+    "tether": "1.3.2",
+    "animate.css": "3.5.2"
+  }
+}
