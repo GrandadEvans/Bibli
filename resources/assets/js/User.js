@@ -18,7 +18,7 @@ export default class User {
         if (json !== null) {
             return json.length;
         } else {
-            return [];``
+            return [];
         }
     }
 
